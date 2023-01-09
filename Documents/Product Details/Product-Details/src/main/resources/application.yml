@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: kumar
+    password: kumar#1
+    #    url: jdbc:sqlserver://192.168.1.155;databaseName=boschDB;encrypt=true;trustServerCertificate=true;
+    url: jdbc:sqlserver://localhost;databaseName=Product;encrypt=true;trustServerCertificate=true;
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+        format_sql: true
+    show-sql: true
+
